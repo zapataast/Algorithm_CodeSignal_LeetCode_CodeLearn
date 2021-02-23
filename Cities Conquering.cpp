@@ -1,24 +1,12 @@
 vector<int> citiesConquering(int n, vector<vector<int>> roads) {
-    
     vector<int> answer(n,0);
-    if(roads.size()==0){
-        vector<int> az(n,1);
-        return az;
-    }
     int dawtagch=0;
-    vector<int> oneroadarr(n,-1); int b=0;
-    
-    int oneroad = 0;
     for(int i=0; i<n; i++){
         for(int j=0; j<roads.size(); j++){
         //1 roadtai city bolon ogt zamgvi city g olii ------------------
             if(roads[j][0] == i || roads[j][1]==i){
                 dawtagch++;
             }
-        }
-        if(dawtagch==1){
-            oneroad++;
-            oneroadarr[b] = i ; b++;
         }
         if(dawtagch<=1){
             answer[i] = 1; // exnii shono ezlegdex city / conquerd city 
@@ -30,7 +18,7 @@ vector<int> citiesConquering(int n, vector<vector<int>> roads) {
     int jindex = roads.size();
     bool checker = true;
     vector<int> ystgagch; 
-    while(checker){
+    while(checker){ // toirog bolson citynyydiig olj -1 ytga ogj bna
     int a3 = 0;int a4 = 0;
     for(int i=0; i<jindex; i++){
         //cout << newroad[i][0] <<" "<< newroad[i][1] <<  " ";
@@ -83,7 +71,7 @@ vector<int> citiesConquering(int n, vector<vector<int>> roads) {
     int multipath = 0;
     int mincityconut = 0;
     int tegcity = 0;
-    while(city0){
+    while(city0){  // vldsen city nvvdiig olj bna
         vector<int> ez;
         for(int i=0; i<n; i++){
             if(answer[i] == 0){
