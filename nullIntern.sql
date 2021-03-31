@@ -7,3 +7,10 @@ BEGIN
                                                        ## мөн UPPER ашиглан description-үсгүүдийг нь томоор бичиж байна. 
     ;
 END
+
+## Databases 26
+DROP PROCEDURE IF EXISTS legsCount;
+CREATE PROCEDURE legsCount()
+    SELECT SUM( CASE WHEN type='human' THEN 2 WHEN type='cat' THEN 4 ELSE 4 END) as summary_legs
+    FROM creatures
+    ORDER BY id;
