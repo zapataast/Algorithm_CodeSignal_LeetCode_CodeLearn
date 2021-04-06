@@ -3,4 +3,5 @@ CodeSignal Solution
 
 Intro: 57, 58, 59, 60 C++
 Graphs: 1-7 Solution C++
-Databases: 11-14 Solution SQL
+The Core : 59 C#
+Databases: 11-27 Solution SQL
