@@ -20,8 +20,8 @@ int constructSquare(string s) {
     
     for(; 0<startvalue; startvalue--){
         Dictionary<string, int> dict_num =  new Dictionary<string, int>();
-        string temp = Convert.ToInt32(Math.Pow(startvalue,2)).ToString();
-        Console.WriteLine("temp: " + temp);
+        string temp = Convert.ToInt32(Math.Pow(startvalue,2)).ToString(); //тестийн тоогоо шууд string -д хадгалж байна
+        
         for(int i=0; i<temp.Length; i++){ // квадрат тоо болгоныг Dictionary-д түр хадгалж байна
             if(dict_num.ContainsKey(temp[i].ToString()) == true){
                 int b1 = dict_num[temp[i].ToString()]+1;
@@ -38,13 +38,8 @@ int constructSquare(string s) {
                 taaralt++;  
                 int catched = My_dict1[My_dict1.ElementAt(j).Key]; // My_dict1 value-ыг хадгалж байна
                 
-                Console.WriteLine("t1");
-                
                 var key1 = dict_num.FirstOrDefault(x => x.Value == catched).Key; //дээрх утгыг ашиглан dict_num-ын key -ыг олж авч байна
                 
-                if (key1 != null) {
-                    Console.WriteLine("Key \"{0}\" value \"{1}\"", key1, catched);
-                }
                 dict_num.Remove(key1); // key ашиглан устгаж байна, давхардлыг арилгах зорилготой.
             }
            
