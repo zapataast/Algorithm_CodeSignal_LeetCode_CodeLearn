@@ -1,7 +1,6 @@
 CREATE PROCEDURE orderOfSuccession()
-BEGIN
-	/* Write your SQL here. Terminate each statement with a semicolon. */
-    #SELECT CASE WHEN country is null then 'Total:' else country end country, count(country) as competitors
+BEGIN	
+    /* Write your SQL here. Terminate each statement with a semicolon. */
     SELECT
     CASE 
         WHEN gender = 'F' THEN CONCAT("Queen ", name)
