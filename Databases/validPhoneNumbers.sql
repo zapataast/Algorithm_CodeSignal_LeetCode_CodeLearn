@@ -30,5 +30,5 @@ $	End of string
 [:class:]	matches a character class i.e. [:alpha:] to match letters, [:space:] to match white space, [:punct:] is match punctuations and [:upper:] for upper class letters.
 p1|p2|p3	Alternation; matches any of the patterns p1, p2, or p3
 {n}	n instances of preceding element
-{m,n}	m through n instances of preceding element
+{m,n}	m through n instances of preceding element .
 */
