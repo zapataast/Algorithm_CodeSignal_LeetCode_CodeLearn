@@ -10,4 +10,4 @@ ORDER BY gg;
 SELECT CONCAT("There are a total of ", count(Occupation)," ", LOWER(Occupation),"s.") as gg
 FROM OCCUPATIONS
 GROUP BY Occupation
-ORDER BY LEFT(gg,22), LEFT(gg,24)
+ORDER BY LEFT(gg,22), LEFT(gg,24);
