@@ -4,5 +4,6 @@ grep '\(\d\)\s*\1' filename.txt # тухайн мөрөнд давтагдсан
 grep -n 'th..' filename.txt # өгүүлбэрт this , the гэсэн үгнүүд байвал харуулна. .(dot) нь ямар нэг үг байвал 
 grep -n [0-9][a-zA-Z] filename.txt # нөхцөлд 6d гэсэн үг байвал гарч ирнэ. 
 grep -n '\[\]' filename.txt # гэвэл [] тэкстэнд байгаа үгүйг хайна. 
-
+grep '\<the\>' filename.txt # гэвэл зөвхөн the гэсэн үгийг нь л ялгаж хайна , the гэдэг үг хайлтанд гарж ирэхгүй
+grep 'the' filename.txt # гэвэл they , the бүгд гарж ирнэ. 
 
