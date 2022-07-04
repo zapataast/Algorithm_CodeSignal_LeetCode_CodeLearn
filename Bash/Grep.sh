@@ -7,3 +7,5 @@ grep -n '\[\]' filename.txt # гэвэл [] тэкстэнд байгаа үгү
 grep '\<the\>' filename.txt # гэвэл зөвхөн the гэсэн үгийг нь л ялгаж хайна , the гэдэг үг хайлтанд гарж ирэхгүй
 grep 'the' filename.txt # гэвэл they , the бүгд гарж ирнэ. 
 grep -i '\<the\>' filename.txt # гэсэн тохиолдолд the ,ThE , THE гээд Case Sensitive хайна
+grep -i -v '\<that\>' filename.txt # гэсэн тохиолдолд шууд нөхцөл else if буюу , эсрэг мөрүүдийг гаргаж ирж байна.
+
