@@ -12,8 +12,7 @@ var romanToInt = function(s) {
         'IX' : 9,
         'V': 5,
         'IV' : 4,
-        'I': 1
-            
+        'I': 1    
     };
     var sum=0;
     for(var i=0; i<s.length; i++){
@@ -36,6 +35,5 @@ var romanToInt = function(s) {
         }
         
     }
-
     return sum;
 };
