@@ -1,4 +1,4 @@
-/* Write your T-SQL query statement below */
+/* Write yor T-SQL query statement below */
 SELECT stock_name, 
     SUM(CASE WHEN operation = 'Sell' THEN price 
     WHEN operation = 'Buy' THEN -price
